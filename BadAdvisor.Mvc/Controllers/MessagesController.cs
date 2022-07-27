@@ -36,6 +36,7 @@ namespace BadAdvisor.Mvc.Controllers
             return new JsonResult(new MessageModel()
             {
                 Text = message.Text ,
+                Likes = 150
             });
         }
 
@@ -48,5 +49,7 @@ namespace BadAdvisor.Mvc.Controllers
     public class MessageModel
     {
         public string Text { get; set; }
+
+        public int Likes { get; set; }
     }
 }
